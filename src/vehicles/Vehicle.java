@@ -14,12 +14,18 @@ public abstract class Vehicle {
 
 
     public Vehicle(String licensePlate, VehicleType type, String ownerName) {
+         if (licensePlate == null) {
+            throw new IllegalArgumentException("License plate cannot be null or empty.");
+        }
          this.licensePlate = licensePlate.toUpperCase();
         this.type = type;
         this.ownerName = ownerName;
     }
 
     public Vehicle(String licensePlate, VehicleType type, String ownerName, String color) {
+         if (licensePlate == null) {
+            throw new IllegalArgumentException("License plate cannot be null or empty.");
+        }
         this.licensePlate = licensePlate.toUpperCase();
         this.type = type;
         this.ownerName = ownerName;
