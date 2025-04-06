@@ -1,22 +1,40 @@
-public class Vehicles{
+public abstract class Vehicle {
+    private final String licensePlate;
+    private final VehicleType type;
+    private String ownerName;
+    private final String color;
 
-    private String Type;
-    private String VehicleNo;
+    // Demonstrates: II. Overloaded Constructors
+    public Vehicle(String licensePlate, VehicleType type) {
+        if (licensePlate == null || licensePlate.trim().isEmpty()) {
+            throw new IllegalArgumentException("License plate cannot be null or empty.");
+        }
+        this.licensePlate = licensePlate.toUpperCase();
+        this.type = type;
 
-    public Vehicles(String Type, String VehicleNo){
-        this.Type = Type;
-        this.VehicleNo = VehicleNo;
+
+    public Vehicle(String licensePlate, VehicleType type, String ownerName) {
+        this.licensePlate = licensePlate;
     }
 
-    public String getType(){
-        return Type;
+    public Vehicle(String licensePlate, VehicleType type, String ownerName, String color) {
+            this(licensePlate, type, ownerName); // Call the other constructor
+            this.ownerName = ownerName;
+
+        }
+
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
-    public String getVehicleNo(){
-        return VehicleNo;
+    public VehicleType getType() {
+        return type;
     }
 
+    public String getOwnerName() {
+        return ownerName;
+    }
 
-
-    
-}
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
