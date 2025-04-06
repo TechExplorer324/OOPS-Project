@@ -5,7 +5,7 @@ class EntryLogs{
   LocalTime localTime = LocalTime.now();
   boolean success1;
 
-EntryLogs(localDate,localTime,success){
+EntryLogs(localDate,localTime,success1){
   this.localDate=localDate;
   this.localTime=localTime;
   this.success1=success1;  
