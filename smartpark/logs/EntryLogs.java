@@ -1,13 +1,11 @@
 import java.time.*;
 
 class EntryLogs{
-  LocalDate localDate = LocalDate.now();
-  LocalTime localTime = LocalTime.now();
+  LocalDate localDateEntry = LocalDate.now();
+  LocalTime localTimeEntry = LocalTime.now();
   boolean success1;
 
-EntryLogs(localDate,localTime,success1){
-  this.localDate=localDate;
-  this.localTime=localTime;
-  this.success1=success1;  
+EntryLogs(success1){
+    this.success1=success1;  
 }
 }
