@@ -50,11 +50,11 @@ public class Car extends Vehicle{
         super(licensePlate, VehicleType.);
         }
 
-   public Vehicle(String licensePlate, VehicleType type, String ownerName) {
+   public Car(String licensePlate, VehicleType type, String ownerName) {
          super(licensePlate, type, ownerName);
     }
 
-    public Vehicle(String licensePlate, VehicleType type, String ownerName, String color) {
+    public Car(String licensePlate, VehicleType type, String ownerName, String color) {
        super(licensePlate, type, ownerName, color);
 
         }
