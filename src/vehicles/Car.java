@@ -20,6 +20,9 @@
 //         return carCompany;
 //     }
 
+// }
+
+/*
 public class Car extends Vehicle {
     public Car(String licensePlate) {
         super(licensePlate, VehicleType.CAR);
@@ -33,6 +36,7 @@ public class Car extends Vehicle {
         return 1.0; // Standard car size unit
     }
 }
+*/
 
 public class Car extends Vehicles{
 
@@ -88,5 +92,3 @@ public class Car extends Vehicles{
 }
 
 
-    
-// }
