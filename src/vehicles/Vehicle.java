@@ -6,7 +6,7 @@ public abstract class Vehicle {
 
     // Demonstrates: II. Overloaded Constructors
     public Vehicle(String licensePlate, VehicleType type) {
-        if (licensePlate == null || licensePlate.trim().isEmpty()) {
+        if (licensePlate == null) {
             throw new IllegalArgumentException("License plate cannot be null or empty.");
         }
         this.licensePlate = licensePlate.toUpperCase();
@@ -38,6 +38,11 @@ public abstract class Vehicle {
     public String getOwnerName() {
         return ownerName;
     }
+
+    public String getColor(){
+        return color;
+    }
+        
 
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
