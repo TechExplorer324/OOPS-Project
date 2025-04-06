@@ -14,12 +14,16 @@ public abstract class Vehicle {
 
 
     public Vehicle(String licensePlate, VehicleType type, String ownerName) {
-        this.licensePlate = licensePlate;
+         this.licensePlate = licensePlate.toUpperCase();
+        this.type = type;
+        this.ownerName = ownerName;
     }
 
     public Vehicle(String licensePlate, VehicleType type, String ownerName, String color) {
-            this(licensePlate, type, ownerName); // Call the other constructor
-            this.ownerName = ownerName;
+        this.licensePlate = licensePlate.toUpperCase();
+        this.type = type;
+        this.ownerName = ownerName;
+        this.color = color;
 
         }
 
