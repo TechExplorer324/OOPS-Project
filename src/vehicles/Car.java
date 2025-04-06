@@ -38,7 +38,7 @@ public class Car extends Vehicle {
 }
 */
 
-public class Car extends Vehicles{
+public class Car extends Vehicle{
 
     String carCompany;
     String carType;
@@ -46,8 +46,8 @@ public class Car extends Vehicles{
     
 
 
-    public Car(String licensePlate, VehicleType type){
-        super(licensePlate, type);
+    public Car(String licensePlate, CarType type){
+        super(licensePlate, VehicleType.);
         }
 
    public Vehicle(String licensePlate, VehicleType type, String ownerName) {
