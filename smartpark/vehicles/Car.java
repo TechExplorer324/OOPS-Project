@@ -1,7 +1,6 @@
 package vehicles;
 
 public class Car extends Vehicle {
-
     String carCompany;
     String carType;
     int noOfPassengers;
